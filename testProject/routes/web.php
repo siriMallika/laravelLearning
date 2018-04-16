@@ -22,3 +22,5 @@ Route::get('/','TestController@indexPage')->name('test.indexPage');
 // });
 
 Route::get('/detail/{id}', 'TestController@addUser')->name('test.addUser');
+Route::post('/demoOmise', 'OmiseController@doCharge')->name('test.omisePay');
+Route::get('/payment','OmiseController@paymentPage')->name('test.paymentPage');
